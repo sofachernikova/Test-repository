@@ -1,0 +1,52 @@
+<!-- Структура с подключением к CSS и JS -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Верхнее меню -->
+    <header>
+		<nav class="dws-menu">
+			<ul>
+				<li><a href="#">Главная</a>
+					<ul>
+						<li><a href="#">Об агенстве</a></li>
+						<li><a href="#">Наше портфолио</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Услуги</a>
+				    <ul>
+						<li><a href="#">Печать</a></li>
+						<li><a href="#">Разработка</a></li>
+						<li><a href="#">Дорисовка</a></li>
+						<li><a href="#">Индивидуальный подход</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Контакты</a>
+				<ul>
+						<li><a href="#">Почта</a></li>
+						<li><a href="#">Инстаграм</a></li>
+						<li><a href="#">ВКонтакте</a></li>
+					</ul>
+				</li>
+			</ul><br>
+		</nav>
+	</header>
+
+    <!-- Форма -->
+    <form>
+        <label for="name"><p class="formLabels">Имя*</p></label>
+        <input type="text" id="name" v-model="firstName" v-on:input="name">
+        <label for="surname"><p class="formLabels">Фамилия*</p></label>
+        <input type="text" id="surname" v-model="lastName" v-on:input="surname">
+    </form>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
+
